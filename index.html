@@ -300,6 +300,23 @@
 
   .set-row:last-child { border-bottom: 1px solid var(--line); }
 
+  .set-embed {
+  margin-bottom: 22px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.set-embed:last-of-type { margin-bottom: 0; }
+
+.set-embed iframe {
+  display: block;
+  width: 100%;
+  height: 166px;
+  border: 0;
+}
+
   .play-dot {
     width: 42px;
     height: 42px;
@@ -321,6 +338,7 @@
     font-size: 14px;
     color: var(--muted);
   }
+  
 
   /* ---------- Booking ---------- */
 
@@ -558,23 +576,24 @@
     <h2>Recent sets</h2>
     <p class="sub">A running list of mixes and mashups — full tracks live on SoundCloud.</p>
 
-    <div class="set-row">
-      <div class="play-dot"><a href="https://soundcloud.com/djm33k237/quiet-on-the-creeknola-bounce?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">▶</a></div>
-      <div class="set-title">Quiet on the creek NOLA Bounce Mix</div>
-      <div class="set-meta">SoundCloud</div>
-    </div>
-    <div class="set-row">
-      <div class="play-dot"><a href="https://soundcloud.com/djm33k237/deep-cuts-vol-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">▶</a></div>
-      <div class="set-title">Deep Cuts Vol 1</div>
-      <div class="set-meta">SoundCloud</div>
-    </div>
-    <div class="set-row">
-      <div class="play-dot"><a href="https://soundcloud.com/djm33k237/smooth-rnb-vol-3?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">▶</a></div>
-      <div class="set-title">Smooth RNB Vol 4</div>
-      <div class="set-meta">SoundCloud</div>
-    </div>
+    <div class="set-embed">
+  <iframe scrolling="no" frameborder="no" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fdjm33k237%2Fquiet-on-the-creeknola-bounce&color=%23e5202f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"
+    title="Quiet on the Creek (NOLA Bounce)"></iframe>
+</div>
+<div class="set-embed">
+  <iframe scrolling="no" frameborder="no" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fdjm33k237%2Fdeep-cuts-vol-1&color=%23e5202f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"
+    title="Deep Cuts Vol. 1"></iframe>
+</div>
+<div class="set-embed">
+  <iframe scrolling="no" frameborder="no" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fdjm33k237%2Fsmooth-rnb-vol-3&color=%23e5202f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"
+    title="Smooth R&B Vol. 3"></iframe>
+</div>
   </div>
 </section>
+
 <section class="events" id="events">
   <div class="wrap">
     <h2>Upcoming events</h2>
